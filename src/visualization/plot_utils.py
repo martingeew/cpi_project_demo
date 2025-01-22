@@ -2,6 +2,7 @@ import datetime
 import os
 import matplotlib.pyplot as plt
 
+
 def save_plot_as_image(filename):
     """
     Save the current matplotlib plot as an image with the given filename.
@@ -12,7 +13,7 @@ def save_plot_as_image(filename):
     Returns:
     - None
     """
-    
+
     date = datetime.date.today().strftime("%d-%m-%Y")
     path = f"../../reports/figures/{date}/"
 
@@ -22,6 +23,7 @@ def save_plot_as_image(filename):
 
     plt.savefig(path + filename + ".png", bbox_inches="tight")
     print(f"Successfully exported {filename}")
+
 
 # Example usage:
 # ... [your plot code]
